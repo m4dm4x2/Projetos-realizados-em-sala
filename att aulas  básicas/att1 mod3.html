@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1° atividade do módulo 3</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Max Monteiro</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mim">Sobre Mim</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#dados-pessoais">Dados Pessoais</a></li>
+                <li><a href="#experiencia">Experiência Profissional</a></li>
+                <li><a href="#formacao">Formação Acadêmica</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sobre mim -->
+    <main>
+        <article id="sobre-mim">
+            <h2>Sobre mim</h2>
+            <p>Sou um jovem que gosta de programação e jogos eletrônicos, que está no curso pelo PRONATEC.</p>
+            <figure>
+                <img src="Captura de tela 2025-08-08 184420.png" alt="Foto do Max" style="max-width: 400px;">
+                <figcaption>Imagem ilustrativa do autor</figcaption>
+            </figure>
+        </article>
+
+        <!-- Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="#" method="post">
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="40"></textarea><br>
+
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" name="nome"><br>
+
+                <label for="email">Seu Email:</label>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="telefone">Seu Telefone:</label>
+                <input type="tel" id="telefone" name="telefone"><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Barra lateral -->
+        <aside>
+            <h3>Atalhos</h3>
+            <ul>
+                <li><a href="#dados-pessoais">Dados pessoais</a></li>
+                <li><a href="#experiencia">Experiência profissional</a></li>
+                <li><a href="#formacao">Formação acadêmica</a></li>
+            </ul>
+        </aside>
+
+        <!-- Formulário principal -->
+        <section>
+            <form action="#" method="post">
+                
+                <!-- Dados pessoais -->
+                <fieldset id="dados-pessoais">
+                    <legend>Dados pessoais</legend>
+                    <label for="nome-completo">Nome Completo:</label><br>
+                    <input type="text" id="nome-completo" name="nome-completo"><br>
+
+                    <label for="email-pessoal">Email:</label><br>
+                    <input type="email" id="email-pessoal" name="email-pessoal"><br>
+
+                    <label for="data-nasc">Data de Nascimento:</label><br>
+                    <input type="date" id="data-nasc" name="data-nasc"><br>
+
+                    <button type="submit">Salvar Perfil</button>
+                </fieldset>
+
+                <!-- Experiência profissional -->
+                <fieldset id="experiencia">
+                    <legend>Experiência profissional</legend>
+                    <label for="empresa">Empresa:</label><br>
+                    <input type="text" id="empresa" name="empresa"><br>
+
+                    <label for="cargo">Cargo/Posição:</label><br>
+                    <input type="text" id="cargo" name="cargo"><br>
+
+                    <label for="data-adm">Data de admissão:</label><br>
+                    <input type="date" id="data-adm" name="data-adm"><br>
+
+                    <label for="data-exp">Data de saída:</label><br>
+                    <input type="date" id="data-exp" name="data-exp"><br>
+
+                    <label for="funcoes">Funções:</label><br>
+                    <textarea id="funcoes" name="funcoes"></textarea><br>
+
+                    <button type="submit">Salvar Experiência</button>
+                </fieldset>
+
+                <!-- Formação acadêmica -->
+                <fieldset id="formacao">
+                    <legend>Formação acadêmica</legend>
+                    <label for="instituicao">Local de estudo:</label><br>
+                    <input type="text" id="instituicao" name="instituicao"><br>
+
+                    <label for="nivel">Nível de formação:</label><br>
+                    <select id="nivel" name="nivel">
+                        <option value="">--Escolha uma opção--</option>
+                        <option value="fundamental">Ensino Fundamental</option>
+                        <option value="medio">Ensino Médio</option>
+                        <option value="tecnico">Técnico</option>
+                        <option value="superior">Ensino Superior</option>
+                    </select><br>
+
+                    <label for="data-inicio">Data de início:</label><br>
+                    <input type="date" id="data-inicio" name="data-inicio"><br>
+
+                    <label for="data-conclusao">Data de conclusão:</label><br>
+                    <input type="date" id="data-conclusao" name="data-conclusao"><br>
+
+                    <label for="conceitos">Conceitos vistos:</label><br>
+                    <textarea id="conceitos" name="conceitos"></textarea><br>
+
+                    <button type="submit">Salvar Formação</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Criador: <strong>Max S. Monteiro</strong><br>
+        Data: <time datetime="2025-08-08">08/08/2025</time></p>
+    </footer>
+</body>
+</html>
