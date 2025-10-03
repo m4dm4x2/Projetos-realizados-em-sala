@@ -1,0 +1,106 @@
+body {
+ margin: 0;
+ font-size: clamp(1em, 3vw, 2em);
+}
+.Cabecalho {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*font-style: normal;*/
+    padding: 5%;
+    text-align: center;
+    background-color: darkgray;
+    border-bottom: 2%; /*trocado auto*/
+    align-items: start;
+}
+
+.Cabecalho h1 {
+    margin-bottom: 2%;
+
+    /*teste*/
+    /* Ativa o Flexbox no elemento h1 */
+    display: flex;
+    
+    /* Alinha os itens (imagem e texto) verticalmente ao centro */
+    align-items: center;
+
+    /* Alinha os itens horizontalmente ao centro */
+    justify-content: center;
+
+    /* Adiciona um espaço entre a imagem e o texto */
+    gap: 15%;
+}
+
+.Cabecalho img {
+    width: 20%; /*trocado: 200px;*/
+    height: 20%; /*trocado: 100px;*/
+}
+
+.barra-lateral {
+    background-color: lightgray;
+    padding: 2% 5% 2% 0%; /*trocado por responsivo*/
+    width: 100%;
+    max-width: 8000px;
+    box-sizing: border-box;
+}
+
+.barra-lateral-principal {
+    display: flex;
+    padding: 1%; /*trocado: 10px*/
+}
+
+.barra-lateral-navegacao {
+    flex: 1;
+    max-width: 10%; /*trocado:  300px;*/
+    padding: 1%;
+    background-color: darkgray;
+    border-right: 1px solid black; /*trocado: 10px;*/
+
+    width: 50%;
+    border-radius: 3%;
+}
+
+.barra-lateral-navegacao h2 {
+    color:black;
+    border-bottom: blue;
+    padding-bottom:10%;
+font-size: clamp(1em, 1.5vw, 2em);
+    text-align: center;
+}
+
+.lista-nav {
+    list-style-type: none;
+    padding: 0px; /*trocado: 10px; */
+}
+
+.lista-nav li a {
+    color:black; 
+    font-size: clamp(1em, 1.5vw, 2em);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration:none;
+    display: block;
+    border-radius: 10%; 
+    margin-bottom: 10%;
+    transition: 0.3s;
+
+    padding: 1%;
+}
+
+.Conteudo {
+    flex: 1;
+    padding: 1%; /*trocado: 100px; */
+    border: none;
+}
+
+#iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 15%;
+    box-sizing: border-box;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+footer {
+    text-align: center;
+}
+

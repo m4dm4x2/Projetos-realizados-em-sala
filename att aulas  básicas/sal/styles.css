@@ -1,0 +1,89 @@
+body {
+    background-color: black;
+    font-style: normal;
+}
+.fodasse p {
+    background-color: dimgray;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    margin: 10px;
+    padding: 10px;
+}
+h2 {
+    color: darkgrey;
+    font-size: 16px;
+}
+.teste{
+    color: darkgray;
+}
+.introducao {
+     font-style: italic;
+     color: darkgray;
+     text-align: center;
+}
+.destaques{
+    font-style:unset;
+    text-align: center;
+    color: white;
+} 
+.primario{margin: 10px; padding: 10px; background-color: gold; } 
+.secundario{margin: 10px; padding: 10px; font-style: oblique ;}
+.cabecalho p{ font-style: italic; color: gray;}
+body, p { background-color: black; font-style: normal; color: white;}
+.com-imagem { background-color: white; background-image: url(https://i0.wp.com/www.silocreativo.com/wp-content/uploads/2018/11/comentarios-CSS-en-linea.png?fit=730%2C381&quality=100&strip=all&ssl=1);}
+.boxmodel p { width:200px; height: 100px; padding: 20px; border: 5px; margin: 30px; border-color: white; background-color: darkgray;}
+.container{       
+            position: relative; 
+            width: 400px;
+            height: 300px;
+            background-color: purple;
+            border: 2px solid black;
+        }
+        .filho{
+            position: absolute;     
+            bottom: 0;              
+            right: 0;               
+            width: 100px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+        }
+
+.container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color:rgb(128, 68, 226);
+            width: 900px;
+            height: 800px;
+        }
+        .item1{
+            background-color: gold;
+        }
+        .item2{
+            background-color: gold;
+        }
+        .item3{
+            background-color: gold;
+        }
+         a:hover{
+            color: red;
+        }
+        p::first-letter {
+            font-size: 200px;
+            font-weight: bold;
+            color: purple;
+        }
+        h2::before {
+            content: "😈"; 
+        }
+/* tem como agrupar seletores para diminuir codigo por exemplo
+h2, h1, p {
+    font-style: italic;
+     color: darkgray;
+     text-align: center;
+    font-size: 16px;
+}*/

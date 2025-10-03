@@ -1,0 +1,2 @@
+curl --location --request DELETE 'http://localhost:3000/aluno/2' \
+--data ''

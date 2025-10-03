@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(Imagem-Principal.webp);
+  background-size: cover;
+}
+.inserir, img, h2 {
+  text-align: center;
+  max-width: 200%;
+}
+
+.inserir {
+  padding: 3%;
+  background-color: lightblue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  height: 50%;
+  border-radius: 3%;
+}
+label {
+  display: block;
+  text-align: left;
+  width: 100%;
+  max-width: 280px;  /* igual aos inputs */
+  margin: 0 auto 5px auto; /* centraliza o bloco, mas texto vai à esquerda */
+  font-weight: 600; /* deixa em negrito (opcional) */
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 35px;   
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;  
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+  max-width: 280px;  
+  margin: 0 auto 1rem auto;
+}
+
+.input-group i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+  font-size: 16px;
+}
+
+.input-group .fa-user {
+  left: 10px;
+}
+
+.input-group .toggle-password {
+  right: 10px;
+  cursor: pointer;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+</style>
+<body>
+    <main class="inserir">
+        <img src="R (3).png" alt="Logo Cedup Hermann Hering">
+        <h2>Faça login para prosseguir</h2>
+        
+        <label for="usuario">Usuário</label>
+        <div class="input-group">
+            <i class="fa-solid fa-user"></i>
+            <input id="usuario" name="usuario" placeholder="Seu nome de Usuário" type="text">
+        </div>
+
+        <label for="senha">Senha</label>
+        <div class="input-group">
+            <input id="senha" name="senha" placeholder="Sua senha" type="password">
+            <i class="fa-solid fa-eye toggle-password" onclick="toggleSenha()"></i>
+        </div>
+
+        <a href="escola.html">
+            <button>Entrar</button>
+        </a>
+    </main>
+
+    <script>
+        function toggleSenha() {
+            const senhaInput = document.getElementById("senha");
+            const icone = document.querySelector(".toggle-password");
+
+            if (senhaInput.type === "password") {
+                senhaInput.type = "text";
+                icone.classList.remove("fa-eye");
+                icone.classList.add("fa-eye-slash");
+            } else {
+                senhaInput.type = "password";
+                icone.classList.remove("fa-eye-slash");
+                icone.classList.add("fa-eye");
+            }
+        }
+    </script>
+</body>
+</html>

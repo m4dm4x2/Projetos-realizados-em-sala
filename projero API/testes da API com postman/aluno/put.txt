@@ -1,0 +1,10 @@
+curl --location 'http://localhost:3000/aluno' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "nome": "Max Aluno",
+  "data_nascimento": "2005-07-01",
+  "email": "max@mail.com",
+  "telefone": 47999999999,
+  "endereco": "Rua das Alfaces, 123"
+}
+'

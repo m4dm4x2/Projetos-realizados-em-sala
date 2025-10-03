@@ -1,0 +1,2 @@
+curl --location 'http://localhost:3000/nota/fk_matricula/3' \
+--data ''

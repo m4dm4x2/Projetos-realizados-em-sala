@@ -1,0 +1,74 @@
+creat table tipoevento(
+IDtipoevento primary key,
+descricao VARCHAR(45),
+cadevent VARCHAR(45));
+---------------------------------------------------
+creat table evento(
+idevento primary key;
+nome varchar(45);
+data date;
+horaini time;
+horafi time;
+fk_IDtipoevento int;
+forenkey (tipo) referenses tipo (IDtipoevento);)
+---------------------------------------------------------
+creat table estado(
+idestado primary key;
+nome varchar(45);)
+-----------------------------------------------------------
+creat table cidade(
+idcidade primary key;
+nome varchar(45);
+codIBGE 
+fk_idestado int;
+forenkey (estado) referenses estado (idestado);)
+------------------------------------------------------------
+creat table local(
+idlocal primary key;
+emailresp varchar(45);
+numresp int;
+end varchar(45);
+complet varchar(45);
+cep int;
+capacidade;
+fk_idcidade int;
+forenkey (cidade) referenses cidade (idcidade);)
+-----------------------------------------------------------------
+creat table: func(
+idfunc primary key;
+escala float;
+nome varchar(45);
+cpf int;
+contato int;
+end varchar;
+salario float;)
+----------------------------------------------------------------------
+creat table: pessoaenvol(
+idpessoaenvol primary key:
+nome varchar(45);
+contato int;
+cpf int;
+status varchar(45);
+salario int;)
+-----------------------------------------------------------------------
+creat table: eveloc(
+ideveloc primary key;
+valor float;
+fk_idevento int;
+fk_idlocal int;
+fk_idfunc int;
+fk_idpessoaenvol int;
+forenkey (evento) referenses evento (idevento);
+forenkey (local) referenses local (idlocal);
+forenkey (func) referenses func (idfunc);
+forenkey (pessoaenvol) referenses pessoaenvol (idpessoaenvol);)
+---------------------------------------------------------------------------
+creat table: insc(
+idinscri primary key;
+numero int;
+nome varchar(45);
+idade int;
+cpf int;
+contato int;
+fk_ideveloc int;
+forenkey (eveloc) referenses eveloc (ideveloc);

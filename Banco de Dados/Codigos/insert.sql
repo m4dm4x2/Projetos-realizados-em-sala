@@ -1,0 +1,10 @@
+insert into cli values ('1', 'max', '2008/08/26', '11534972986', '997227557', 'rua abc', 'mschultzmonteiro@gmail.com');
+insert into cli values ('2', 'giga', '2007/11/09', '64554765325', '9992554114', 'rua abc', 'bah´s@gmail.com');
+insert into cli values ('3', 'bitelo', '2009/03/04', '1234567890', '80339777', 'rua abc', 'biteloreidaelas@gmail.com');
+insert into cli values ('4', 'cesar', '1975/06/09', '0987654321', '99562515', 'rua abc', 'cesar@gmail.com');
+insert into cli values ('5', 'sheila', '1979/09/16', '97060453920', '999540862', 'rua abc', 'shielas@gmail.com');
+insert into cli values ('6', 'ale', '1978/04/06', '0981234567', '996006990', 'rua abc', 'ale@gmail.com');
+insert into cli values ('7', 'gabi', '2008/10/10', '890571234', '99555331', 'rua abc', 'gabi@gmail.com');
+insert into cli values ('8', 'tom', '2013/04/02', '1238097757', '996542345', 'rua abc', 'tom@gmail.com');
+insert into cli values ('9', 'crica', '1500/08/08', '09876543211', '153687210', 'rua abc', 'crica@gmail.com');
+insert into cli values ('10', 'bah', '2008/08/26', '15135435164', '534346843', 'rua abc', 'bah@gmail.com');

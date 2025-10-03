@@ -1,0 +1,10 @@
+CREATE TABLE `matricula` (
+  `id_matricula` int NOT NULL AUTO_INCREMENT,
+  `fk_aluno` int DEFAULT NULL,
+  `fk_turma` int DEFAULT NULL,
+  `data_matricula` datetime DEFAULT NULL,
+  `status_matricula` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id_matricula`),
+  KEY `fk_aluno` (`fk_aluno`),
+  KEY `fk_turma` (`fk_turma`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

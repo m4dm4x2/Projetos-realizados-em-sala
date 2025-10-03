@@ -1,0 +1,8 @@
+curl --location 'http://localhost:3000/matricula' \
+--header 'Content-Type: application/json' \
+--data '{
+  "fk_aluno": 1,
+  "fk_turma": 2,
+  "data_matricula": "2025-07-01",
+  "status_matricula": "ativa"
+}'

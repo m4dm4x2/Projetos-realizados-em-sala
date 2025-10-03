@@ -1,0 +1,13 @@
+CREATE TABLE `turma` (
+  `id_turma` int NOT NULL AUTO_INCREMENT,
+  `fk_profe` int DEFAULT NULL,
+  `fk_disci` int DEFAULT NULL,
+  `modulo` int NOT NULL,
+  `ano_semestre` int NOT NULL,
+  `turno` varchar(50) DEFAULT NULL,
+  `sala` int DEFAULT NULL,
+  `status_turma` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id_turma`),
+  KEY `fk_disci` (`fk_disci`),
+  KEY `fk_profe` (`fk_profe`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

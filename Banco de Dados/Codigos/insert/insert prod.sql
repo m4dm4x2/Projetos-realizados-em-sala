@@ -1,0 +1,10 @@
+insert into prod values ('1', 'meria ram', 'kingston', 'ddr4 16bg', '250');
+insert into prod values ('2', 'placa mae', 'gigabyte', 'h110m', '430');
+insert into prod values ('3', 'monitior 24"', 'pichau', 'draco', '600');
+insert into prod values ('4', 'ssd', 'kingston', 'nvme 4.0 500gb', '350');
+insert into prod values ('5', 'teclado', 'manser', 'bolas', '130');
+insert into prod values ('6', 'gabinete', 'redragon', 'modelo grande', '500');
+insert into prod values ('7', 'hd', 'manser', '2T', '399');
+insert into prod values ('8', 'mouse', 'chucrute', 'flatron', '184');
+insert into prod values ('9', 'fonte', 'cooperherman', 'tabajara 800w', '999');
+insert into prod values ('10', 'processador', 'intel', 'i9 ultra', '5999');

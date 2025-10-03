@@ -1,0 +1,11 @@
+curl --location --request PUT 'http://localhost:3000/turma/1' \
+--header 'Content-Type: application/json' \
+--data '{
+  "fk_profe": 1,
+  "modulo": 2,
+  "ano_semestre": "2025/2",
+  "turno": "Matutino",
+  "sala": "203",
+  "status_turma": "Ativa"
+}
+'

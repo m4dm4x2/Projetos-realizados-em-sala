@@ -1,0 +1,8 @@
+curl --location 'http://localhost:3000/disciplina' \
+--header 'Content-Type: application/json' \
+--data '{
+  "nome_dis": "Matemática Aplicada",
+  "carga_horaria": 80,
+  "ementa": "Funções, derivadas, integrais e aplicações em engenharia.",
+  "modulo": 2
+}'

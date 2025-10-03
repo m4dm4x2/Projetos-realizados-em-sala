@@ -1,0 +1,29 @@
+constraints =  restrições 
+
+Na criação de uma tabela, as restrições são regras que garantem e integridade e a consistência dos dados. 
+Os principais tipos de restrições incluem NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY e CHECK.
+
+1. NOT NUL 
+Impede que uma coluna aceite valores nulos. Isso garante que um campo especifico sempre tenha valor.
+EX: nome varchar(50) NOT NULL.
+
+2. UNIQUE 
+Garante que todos os valores em uma coluna(ou conjunto) sejam únicos.
+Permite valores nulos, dependendo do sistema de gerenciamento de banco de dados (SGDB).
+EX: email varchar(50) unique.
+
+3. PRIMARY KEY
+Define uma coluna ou conjunto de colunas como chave principal da tabela.
+A chave primaria é usada para identificar exclusivamente cada registro na tabela.
+Uma tabela pode ter apenas uma chave primaria, e ela não permite valores nulos.
+EX: id int priamry key.
+
+4. FOREIGN KEY
+Define uma relação entre duas tabelas, estabelecendo uma chave primaria em uma tabela como uma chave estrangeira em outra tabela.
+É usada para garantir integridade referencial entre as tabelas.
+EX: cliente_id int references clientes (id).
+
+5. CHECK
+Define uam condição que os valores de uma coluna ou  conjuntos deve atender.
+Garante que apenas dados validos sejam inseridos em uma coluna.
+EX: idade int check (idade >= 0).

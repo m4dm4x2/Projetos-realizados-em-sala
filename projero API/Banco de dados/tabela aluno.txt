@@ -1,0 +1,9 @@
+CREATE TABLE `aluno` (
+  `id_aluno` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) NOT NULL,
+  `data_nascimento` date DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `telefone` decimal(12,0) DEFAULT NULL,
+  `endereco` varchar(250) DEFAULT NULL,
+  PRIMARY KEY (`id_aluno`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci4

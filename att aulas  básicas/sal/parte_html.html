@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currriculo de Max S. Monterio</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <aside>
+        <img class="img" src="imagens/pronatec_logo.png" alt="pronatec">
+        <h1>Meu perfio profissional</h1>
+        <img class="img" src="" alt="Foto de Max Monterio">
+        <nav>
+            <ul>
+                <li><a href="#" onclick="carregarHtml(apresentacao)">Apresentação</a></li>
+                <li><a href="#" onclick="carregarHtml(dados)">Dados pessoais</a></li>
+                <li><a href="#" onclick="carregarHtml(Xprofissional)">Experiência profissional</a></li>
+                <li><a href="#" onclick="carregarHtml(Facademica)">Formação academica</a></li>
+            </ul>
+        </nav>
+    </aside>
+      <iframe id="meuIframe" width="600" height="300"></iframe>
+      
+          <script>
+      // Conteúdos prontos para serem injetados no iframe
+      const apresentacao = `
+        <h2>Apresentação</h2>
+        <p>Olá, meu nome é Max S. Monteiro. Aqui está um breve resumo sobre mim...</p>
+      `;
+
+      const dados = `
+        <h2>Dados Pessoais</h2>
+        <form>
+          <label for="nome-completo">Nome Completo:</label><br>
+          <input type="text" id="nome-completo" name="nome-completo"><br>
+
+          <label for="email-pessoal">Email:</label><br>
+          <input type="email" id="email-pessoal" name="email-pessoal"><br>
+
+          <label for="data-nasc">Data de Nascimento:</label><br>
+          <input type="date" id="data-nasc" name="data-nasc"><br>
+
+          <button type="submit">Salvar Perfil</button>
+        </form>
+      `;
+
+      const Xprofissional = `
+        <h2>Experiência Profissional</h2>
+        <form>
+          <label for="empresa">Empresa:</label><br>
+          <input type="text" id="empresa" name="empresa"><br>
+
+          <label for="cargo">Cargo/Posição:</label><br>
+          <input type="text" id="cargo" name="cargo"><br>
+
+          <label for="data-adm">Data de admissão:</label><br>
+          <input type="date" id="data-adm" name="data-adm"><br>
+
+          <label for="data-exp">Data de saída:</label><br>
+          <input type="date" id="data-exp" name="data-exp"><br>
+
+          <label for="funcoes">Funções:</label><br>
+          <textarea id="funcoes" name="funcoes"></textarea><br>
+
+          <button type="submit">Salvar Experiência</button>
+        </form>
+      `;
+
+      const Facademica = `
+        <h2>Formação Acadêmica</h2>
+        <form>
+          <label for="instituicao">Local de estudo:</label><br>
+          <input type="text" id="instituicao" name="instituicao"><br>
+
+          <label for="nivel">Nível de formação:</label><br>
+          <select id="nivel" name="nivel">
+            <option value="">--Escolha uma opção--</option>
+            <option value="fundamental">Ensino Fundamental</option>
+            <option value="medio">Ensino Médio</option>
+            <option value="tecnico">Técnico</option>
+            <option value="superior">Ensino Superior</option>
+          </select><br>
+
+          <label for="data-inicio">Data de início:</label><br>
+          <input type="date" id="data-inicio" name="data-inicio"><br>
+
+          <label for="data-conclusao">Data de conclusão:</label><br>
+          <input type="date" id="data-conclusao" name="data-conclusao"><br>
+
+          <label for="conceitos">Conceitos vistos:</label><br>
+          <textarea id="conceitos" name="conceitos"></textarea><br>
+
+          <button type="submit">Salvar Formação</button>
+        </form>
+      `;
+
+      // Função para carregar HTML dentro do iframe
+      function carregarHtml(conteudo) {
+        document.getElementById("meuIframe").srcdoc = conteudo;
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+pre{
+    text-align: center;
+    white-space: pre-wrap;
+    word-wrap: break-word; 
+    overflow-x: auto;
+}
+pre p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+img {
+    position: absolute;
+    left: 36%;
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+}

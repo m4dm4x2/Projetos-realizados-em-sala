@@ -1,0 +1,8 @@
+CREATE TABLE `disciplina` (
+  `id_discipli` int NOT NULL AUTO_INCREMENT,
+  `nome_dis` varchar(100) NOT NULL,
+  `carga_horaria` int NOT NULL,
+  `ementa` text,
+  `modulo` int NOT NULL,
+  PRIMARY KEY (`id_discipli`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

@@ -1,0 +1,10 @@
+insert into intped values ('1', '2', '1000', '1', '1');
+insert into intped values ('2', '6', '5900', '2', '2');
+insert into intped values ('3', '7', '2501', '3', '3');
+insert into intped values ('4', '1', '35050', '4', '4');
+insert into intped values ('5', '3', '5405', '5', '5');
+insert into intped values ('6', '45', '4105', '6', '6');
+insert into intped values ('7', '6', '510', '7', '7');
+insert into intped values ('8', '8', '1351', '8', '8');
+insert into intped values ('9', '9', '4860', '9', '9');
+insert into intped values ('10', '31', '644131', '10', '10');

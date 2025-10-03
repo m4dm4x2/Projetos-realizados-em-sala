@@ -1,0 +1,9 @@
+curl --location 'http://localhost:3000/nota' \
+--header 'Content-Type: application/json' \
+--data '{
+  "fk_matricula": 1,
+  "tipo_prova": "Prova Final",
+  "data_prova": "2025-07-03",
+  "valor_nota": 8.5
+}
+'

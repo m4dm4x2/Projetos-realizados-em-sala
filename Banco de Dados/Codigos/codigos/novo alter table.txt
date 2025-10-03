@@ -1,0 +1,2 @@
+alter table nome tabela
+add constraint valor foreign key (valor) references tabela (id);

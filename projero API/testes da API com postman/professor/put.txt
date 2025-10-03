@@ -1,0 +1,7 @@
+curl --location 'http://localhost:3000/professor' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "nome": "prof teste",
+    "email": "bahs@gmail",
+    "telefone": 47997227557
+    }'
